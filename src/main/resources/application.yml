@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      auto: false
+      static: 'us-east-1'
+    credentials:
+      accessKeyId: 'PUT-YOUR-AWS-ACCESS-KEY-HERE'
+      secretKey: 'PUT-YOUR-AWS-SECRET-KEY-HERE'
+
+aws-sns-poc:
+  queueName: 'PUT-YOUR-AWS-QUEUE-NAME-HERE'
+  groupId: test-messages
